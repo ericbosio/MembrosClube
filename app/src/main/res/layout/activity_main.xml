@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro Membros"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#C2185B"
+        android:layout_margin="30dp"/>
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+<EditText
+    android:id="@+id/edittext_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:hint="Digite Nome" />
+
+<EditText
+    android:id="@+id/edittext_email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:hint="Digite Email" />
+</LinearLayout>
+
+
+<LinearLayout
+android:layout_margin="1dp"
+android:orientation="horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center">
+
+<Button
+    android:textStyle="bold"
+    android:layout_margin="1dp"
+    android:id="@+id/button_add"
+    android:text="Incluir Novo"
+    android:backgroundTint="#388E3C"
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<Button
+    android:textStyle="bold"
+    android:layout_margin="1dp"
+    android:id="@+id/button_view"
+    android:text="Visualizar"
+    android:backgroundTint="#0288D1"
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</LinearLayout>
