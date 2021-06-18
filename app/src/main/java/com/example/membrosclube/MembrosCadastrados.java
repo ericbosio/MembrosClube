@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import java.util.List;
 
+// class para visualizar todos os dados do funcionário
+
 public class MembrosCadastrados extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -21,12 +23,14 @@ public class MembrosCadastrados extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
+    // Objeto DatabaseHelperClass e chame o método getEmplyeeList e defina em RecyclerView AdapterCalss
+
         SQLiteClass SQLiteClass = new SQLiteClass(this);
-        List<MembrosClass> membrosClasses = SQLiteClass.getEmployeeList();
+        List<MembrosClass> membrosClasses = SQLiteClass.getMembrosList();
 
         if (membrosClasses.size() > 0){
-            AdapterClass employeadapterclass = new AdapterClass(membrosClasses, MembrosCadastrados.this);
-            recyclerView.setAdapter(employeadapterclass);
+            AdapterClass membroadapterclass = new AdapterClass(membrosClasses, MembrosCadastrados.this);
+            recyclerView.setAdapter(membroadapterclass);
         }else {
             Toast.makeText(this, "Não tem membros cadastrados", Toast.LENGTH_SHORT).show();
         }

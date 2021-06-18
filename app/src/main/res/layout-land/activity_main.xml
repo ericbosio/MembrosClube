@@ -5,33 +5,8 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="157dp"
-        android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/ass1" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textCourse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cadastro Membros"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:textColor="#C2185B"
-            android:layout_margin="30dp"/>
-
-    </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
@@ -43,39 +18,29 @@
             android:id="@+id/edittext_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:hint="Digite Nome" />
 
         <EditText
             android:id="@+id/edittext_rg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:hint="Digite RG" />
 
         <EditText
             android:id="@+id/edittext_telefone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:hint="Digite Telefone" />
 
         <EditText
             android:id="@+id/edittext_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:hint="Digite Email" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_margin="1dp"
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center">
 
         <Button
             android:textStyle="bold"
@@ -84,6 +49,7 @@
             android:text="Incluir Novo"
             android:backgroundTint="#388E3C"
             android:layout_weight="1"
+            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -94,10 +60,10 @@
             android:text="Visualizar"
             android:backgroundTint="#0288D1"
             android:layout_weight="1"
+            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
-
 
 </LinearLayout>
