@@ -20,6 +20,7 @@ public class SQLiteClass extends SQLiteOpenHelper {
 
     private static final String TABLE_NAME = "MEMBROS";
 
+
     public static final String ID = "id";
     public static final String NAME = "name";
     public static final String RG = "rg";
@@ -33,12 +34,13 @@ public class SQLiteClass extends SQLiteOpenHelper {
     private static final String CREATE_TABLE = "create table " + TABLE_NAME +"("+ID+
             " INTEGER PRIMARY KEY AUTOINCREMENT," + NAME + " TEXT NOT NULL,"+EMAIL+" TEXT NOT NULL,"+RG+" TEXT NOT NULL,"+TELEFONE+" TEXT NOT NULL);";
 
-    //Constructor
+
+    //Constructor e subclasse que substitui os métodos de retorno de chamada Oncreate e onUpgrade
     public SQLiteClass(Context context){
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
     }
 
-    // subclasse que substitui os métodos de retorno de chamada Oncreate e onUpgrade
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -51,6 +53,7 @@ public class SQLiteClass extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+
     //Incluir Dados do Membro
     // insirir os dados do membro no banco de dados, passando um objeto ContValues para o método insert ()
     public void addMembros(MembrosClass membrosClass){
@@ -59,6 +62,8 @@ public class SQLiteClass extends SQLiteOpenHelper {
         contentValues.put(SQLiteClass.RG, membrosClass.getRg());
         contentValues.put(SQLiteClass.TELEFONE, membrosClass.getTelefone());
         contentValues.put(SQLiteClass.EMAIL, membrosClass.getEmail());
+
+
         sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.insert(SQLiteClass.TABLE_NAME, null,contentValues);
     }
@@ -87,12 +92,15 @@ public class SQLiteClass extends SQLiteOpenHelper {
         return storeMembros;
     }
 
+
     public void updateMembros(MembrosClass membrosClass){
         ContentValues contentValues = new ContentValues();
         contentValues.put(SQLiteClass.NAME, membrosClass.getName());
         contentValues.put(SQLiteClass.RG, membrosClass.getRg());
         contentValues.put(SQLiteClass.TELEFONE, membrosClass.getTelefone());
         contentValues.put(SQLiteClass.EMAIL, membrosClass.getEmail());
+
+
         sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.update(TABLE_NAME,contentValues,ID + " = ?" , new String[]
                 {String.valueOf(membrosClass.getId())});

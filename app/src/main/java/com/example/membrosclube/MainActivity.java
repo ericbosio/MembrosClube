@@ -41,10 +41,13 @@ public class MainActivity extends AppCompatActivity {
 
                 if (stringName.length() <=0 || stringRg.length() <=0 || stringTelefone.length() <=0 || stringEmail.length() <=0){
                     Toast.makeText(MainActivity.this, "Preencher Todos os Campos", Toast.LENGTH_SHORT).show();
-                }else {
+                }
+
+
+                else {
                     //criar o objeto DatabaseHelperClass e chame o método addMembros e passar os dados
                     SQLiteClass SQLiteClass = new SQLiteClass(MainActivity.this);
-                    MembrosClass membrosClass = new MembrosClass(stringName,stringEmail,stringRg,stringTelefone);
+                    MembrosClass membrosClass = new MembrosClass(stringName,stringRg,stringTelefone,stringEmail);
                     SQLiteClass.addMembros(membrosClass);
                     Toast.makeText(MainActivity.this, "Cadastrado com Sucessos", Toast.LENGTH_SHORT).show();
                     finish();

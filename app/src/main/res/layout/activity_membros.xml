@@ -5,86 +5,86 @@
     android:orientation="vertical"
     android:layout_height="wrap_content">
 
-<TextView
-    android:textColor="#000"
-    android:id="@+id/text_id"
-    android:layout_margin="5dp"
-    android:textSize="15dp"
-    android:text="Id"
-    android:textStyle="bold"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
-
-<EditText
-    android:textColor="#000"
-    android:textStyle="bold"
-    android:id="@+id/edittext_name"
-    android:text="Nome"
-    android:layout_margin="0dp"
-    android:textSize="15sp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
-
-<EditText
-    android:textColor="#000"
-    android:textStyle="bold"
-    android:id="@+id/edittext_rg"
-    android:text="RG"
-    android:layout_margin="0dp"
-    android:textSize="15sp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
-
-<EditText
-    android:textColor="#000"
-    android:textStyle="bold"
-    android:id="@+id/edittext_telefone"
-    android:text="Telefone"
-    android:layout_margin="0dp"
-    android:textSize="15sp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
-
-<EditText
-    android:textColor="#000"
-    android:textStyle="bold"
-    android:id="@+id/edittext_email"
-    android:text="Email"
-    android:layout_margin="0dp"
-    android:textSize="15sp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
-
-
-<LinearLayout
-    android:layout_margin="0dp"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <Button
-        android:backgroundTint="#0288D1"
-        android:id="@+id/button_edit"
-        android:layout_weight="1"
-        android:text="Editar"
-        android:layout_margin="0dp"
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/text_id"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:text="Id"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
+    <EditText
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/edittext_name"
+        android:text="Nome"
         android:layout_margin="0dp"
-        android:backgroundTint="#D32F2F"
-        android:id="@+id/button_delete"
-        android:layout_weight="1"
-        android:text="Excluir"
+        android:textSize="15sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-</LinearLayout>
 
-<View
-    android:layout_margin="0dp"
-    android:background="#C5C5C5"
-    android:layout_width="match_parent"
-    android:layout_height="1dp"/>
+    <EditText
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/edittext_rg"
+        android:text="RG"
+        android:layout_margin="0dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/edittext_telefone"
+        android:text="Telefone"
+        android:layout_margin="0dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/edittext_email"
+        android:text="Email"
+        android:layout_margin="0dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:backgroundTint="#0288D1"
+            android:id="@+id/button_edit"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_margin="0dp"
+            android:backgroundTint="#D32F2F"
+            android:id="@+id/button_delete"
+            android:layout_weight="1"
+            android:text="Excluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_margin="0dp"
+        android:background="#C5C5C5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 
 </LinearLayout>

@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+// AdapterClass para implementar o ViewHolder estendendo RecyclerView
+
 public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> {
 
     List<MembrosClass> membro;
@@ -36,6 +38,8 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> 
         return viewHolder;
     }
 
+    // definir dados em TextView e EditText
+
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
         final MembrosClass membrosClass = membro.get(position);
@@ -54,7 +58,7 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> 
                 String stringTelefone = holder.editText_Telefone.getText().toString();
                 String stringEmail = holder.editText_Email.getText().toString();
 
-                SQLiteClass.updateMembros(new MembrosClass(membrosClass.getId(),stringName,stringEmail,stringRg,stringTelefone));
+                SQLiteClass.updateMembros(new MembrosClass(membrosClass.getId(),stringName,stringRg,stringTelefone,stringEmail));
                 notifyDataSetChanged();
                 ((Activity) context).finish();
                 context.startActivity(((Activity) context).getIntent());
@@ -77,6 +81,7 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> 
         return membro.size();
     }
 
+    // objeto de Textview, EditText e Button na classe do adaptador
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView textViewID;
         EditText editText_Name;

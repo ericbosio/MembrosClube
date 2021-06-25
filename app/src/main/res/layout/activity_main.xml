@@ -64,9 +64,9 @@
             android:id="@+id/edittext_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="Digite Email" />
-
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Digite Email"/>
 
     </LinearLayout>
 
