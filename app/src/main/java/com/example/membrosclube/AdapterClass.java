@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-// AdapterClass para implementar o ViewHolder estendendo RecyclerView
+// AdapterClass para implementar o ViewHolder estendendo RecyclerView.
 
 public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> {
 
