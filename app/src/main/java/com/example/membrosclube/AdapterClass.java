@@ -81,7 +81,8 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> 
         return membro.size();
     }
 
-    // objeto de Textview, EditText e Button na classe do adaptador
+    // objetos de Textview, EditText e Button no AdapterClass
+
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView textViewID;
         EditText editText_Name;

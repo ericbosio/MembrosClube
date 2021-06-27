@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    // criando o EditText e Button
+    //  EditText e Button
 
     EditText editText_name,editText_rg,editText_telefone,editText_email;
     Button button_add,button_view;
